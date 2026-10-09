@@ -1,8 +1,15 @@
+import os
 import requests
 import streamlit as st
 
 
-API_URL = "http://127.0.0.1:8000/predict"
+try:
+    API_URL = st.secrets["CHURN_API_URL"]
+except (KeyError, FileNotFoundError):
+    API_URL = os.getenv(
+        "CHURN_API_URL",
+        "http://127.0.0.1:8000/predict"
+    )
 
 st.set_page_config(
     page_title="Customer Churn Prediction",
