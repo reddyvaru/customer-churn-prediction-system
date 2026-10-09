@@ -1,0 +1,24 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Temporary modeling notebook
+/notebooks/scratch_modeling_experiment.ipynb
+
+# Secrets and environment variables
+.env
+.env.*
+
+# Customer datasets - do not upload
+/data/raw/
+/data/processed/
+
+# Logs
+*.log
