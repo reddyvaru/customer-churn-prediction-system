@@ -1,11 +1,13 @@
 pandas
 numpy
+scikit-learn
 matplotlib
 seaborn
-scikit-learn
-jupyter
+joblib
 fastapi
 uvicorn[standard]
-joblib
 streamlit
 requests
+shap
+xgboost
+ipykernel
